@@ -1,0 +1,30 @@
+# FPS AI Research Project
+
+This repository contains an abstract, generic framework for researching Reinforcement Learning (RL) agents in First-Person Shooter (FPS) style environments.
+
+It is designed for local simulation and educational purposes to explore how an agent might perceive a 3D environment (via simplified vision maps) and make decisions (movement, aiming, shooting).
+
+## Structure
+- `src/fps_env.py`: Contains `FpsEnv`, a custom OpenAI Gymnasium environment simulating the state space (health, vision) and action space (movement, look, shoot).
+- `src/agent.py`: Contains a mock `RandomAgent` that interacts with the `FpsEnv` using random actions.
+- `requirements.txt`: Python dependencies required for the project.
+
+## Installation
+
+1. Create a virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Running the Simulation
+
+You can run the simple random agent to verify the environment works:
+
+```bash
+python -m src.agent
+```
